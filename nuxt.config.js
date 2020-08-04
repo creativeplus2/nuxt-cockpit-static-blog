@@ -39,7 +39,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#000' },
 
   /*
   ** Global CSS
@@ -76,7 +76,7 @@ module.exports = {
       let { data } = await axios.post(process.env.POSTS_URL,
       JSON.stringify({
           filter: { published: true },
-          sort: {_created:-1},
+          // sort: {_created:-1},
           populate: 1
         }),
       {

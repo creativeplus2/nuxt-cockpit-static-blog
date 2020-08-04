@@ -45,7 +45,7 @@ export default {
     JSON.stringify({
         filter: { published: true },
         limit: process.env.PER_PAGE,
-        sort: {_created:-1},
+        // sort: {_created:-1},
         populate: 1
       }),
     {
